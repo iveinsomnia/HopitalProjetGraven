@@ -4,6 +4,7 @@ Projet non-fini du challenge Hopital de Graven
 Salut,
 Voici ma vision du challenge Hopital.
 Premièrement il n'est pas fini (cause boulot :/)
+4h30~
 Il n'est pas "responsive" (cause boulot :v)
 Et je ne suis pas du tout web designer XD
 
