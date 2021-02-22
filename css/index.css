@@ -1,0 +1,185 @@
+@font-face{
+    font-family:"tiresias";
+    font-style:normal;
+    src:url(../webfonts/Tiresias_Infofont.ttf) format("truetype");
+}
+:root {
+    --lightGrey: #495265;
+}
+body, html {
+    font-family: tiresias;
+    color: #FFF;
+    background: rgb(46, 54, 70);
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin-top: 200px;
+}
+
+a, a:visited {
+    color: #DDD;
+    font-size: 1.2em;
+}
+
+#home {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #b4dcf9;
+    padding: 0.5em;
+    color: #283844;;
+}
+#home a, #home a:visited {
+    color: #283844;;
+}
+#applicationsLabel, #menuLabel {
+    font-size: 1.2em;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#mainMenu, #applications {display: none;}
+#mainMenu > li {
+    display: inline-block;
+}
+#drop, #drop-2 {
+    display: none;
+}
+#drop:checked + #mainMenu, #drop-2:checked + #applications {
+    display: inherit;
+}
+#bruce > div {
+    display: inline-block;
+    vertical-align: top;
+}
+#banImg > img {
+    width: 200px;
+}
+
+header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#infos {
+    display: flex;
+    width: max-content;
+    flex-flow: column;
+    flex-direction: row;
+    margin: 0 auto;
+}
+#infos > div {
+    width: 33%;
+    background: var(--lightGrey);
+    border-radius: 12px;
+    padding: 5px;
+}
+#infos > div > h3 {
+    text-align: center;
+}
+#infos > div:nth-child(2n) {
+    margin: 0 20px;
+}
+.partsHead {
+    background: linear-gradient(90deg,#5184a7ff 0%,#5184a700 50%);
+    margin: 2em 0;
+    padding: 1em;
+}
+.partsHead > h3 {margin: 0;}
+#servicesList > div {background: var(--lightGrey);padding: 5px;text-align: justify;width: 25%;margin:0 10px;border-radius: 10px;}
+#servicesList > div:nth-child(2n) {background: #596379;}
+#servicesList > div > h4 {
+    padding-bottom: 1em;
+    border-bottom: 1px solid #5184a7;
+}
+
+#servicesList {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row;
+}
+#servicesList > div > h4 {
+    text-align: center;
+}
+
+#appointmentContent {
+    width: 650px;
+    /* margin: 0 auto; */
+    margin-left: 10px;
+}
+#appointmentContent > form {
+    width: 300px;
+}
+#appointmentContent > * {
+    display: inline-block;
+}
+#appointmentIMG {
+    height: 330px;
+    width: initial;
+}
+#appointmentForm > label {
+    display: block;
+    width: 250px;
+}
+#appointmentForm > input {
+    background: var(--lightGrey);
+    border: 0;
+    color: #FFF;
+    font-size: 1.1em;
+    display: block;
+    width: 98%;
+    margin: 0.1em;
+}
+#appointmentForm > input::placeholder {
+    color: #bbb;
+}
+#appointmentForm > button {
+    border: 0;
+    border-radius: 0;
+    background: var(--lightGrey);
+    color: #FFF;
+    font-size: 1.2em;
+    padding: 0.5em;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+/* */
+#applicationButtons > a > img {
+    width: initial;
+    width: 200px;
+}
+#applicationIMG {
+    width: 150px;
+}
+#applicationContent > div {
+    margin-left: 25px;
+    display: inline-block;
+}
+/**/
+#doctorsList {margin-left: 25px;}
+#doctorsList > div {
+    background: var(--lightGrey);
+    width: 200px;
+    display: inline-block;
+    padding: 10px;
+}
+#doctorsList > div:nth-child(2) {margin: 0 30px;}
+#doctorsList > div > img {height: 320px;width: initial;}
+#doctorsList > div > div {text-align: center;}
+#doctorsList > div > div > h4 {font-size: 1.3em;margin:0.5em;}
+#doctorsList > div > div > h6 {font-size: 1em;margin:0;}
+
+#newsContent {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 640px;
+    margin-left: 25px
+}
+#newsContent > div {background: rgb(22, 27, 34);}
+#newsContent > div:not(:last-child) {margin-bottom: 25px;}
+#newsContent > div > a {font-size: 1.7em;}
+#newsContent > div > p {font-style: italic;}
+.blogDate {font-size: 0.8em;}
