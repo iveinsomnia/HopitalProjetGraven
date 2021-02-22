@@ -7,7 +7,7 @@ Voici ma vision du challenge Hopital.
 
 Premièrement il n'est pas fini (cause boulot :/)
 
-4h30~
+4h30~ (Et j'ai passé trop de temps à papoter en live :v)
 
 Il n'est pas "responsive" (cause boulot :v)
 
